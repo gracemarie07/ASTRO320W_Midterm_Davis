@@ -1,0 +1,26 @@
+[
+  {
+    "file": "Autosave Image -0002skyflat.fit",
+    "exposure_s": 6.0,
+    "horizontal_min_max_normalized": [
+      0.41046546101393416,
+      1.0519122442929143
+    ],
+    "vertical_min_max_normalized": [
+      0.15739697598576935,
+      1.053780017788319
+    ]
+  },
+  {
+    "file": "DOME_FLAT_20_EXP-000110.fit",
+    "exposure_s": 10.0,
+    "horizontal_min_max_normalized": [
+      0.33898887997248656,
+      1.0733310405441554
+    ],
+    "vertical_min_max_normalized": [
+      0.10650005731972945,
+      1.06645267301005
+    ]
+  }
+]
