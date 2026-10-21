@@ -1,0 +1,13 @@
+numpy
+scipy
+matplotlib
+astropy
+pandas
+astroalign
+sep
+Pillow
+nbformat
+nbclient
+ipykernel
+jupyterlab
+openpyxl
