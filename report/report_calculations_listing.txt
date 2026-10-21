@@ -1,0 +1,48 @@
+from pathlib import Path
+import csv
+import math
+import numpy as np
+focus = np.array([17000,17000,17000,16500,16000,16000,15500,15000])
+fwhm = np.array([11.55,12.41,11.19,10.30,9.75,10.68,10.72,12.74])
+for position in np.unique(focus):
+    widths = fwhm[focus == position]
+    sd = widths.std(ddof=1) if len(widths) > 1 else float('nan')
+    print(position, widths.mean(), sd)
+def repeatability(rates):
+    rates = np.asarray(rates, dtype=float)
+    mean = rates.mean()
+    sd = rates.std(ddof=1)
+    deviations = 100 * (rates - mean) / mean
+    return mean, sd, 100 * sd / mean, deviations
+folder = Path('../data')
+with (folder / 'unsaturated_field_star.csv').open() as stream:
+    measurements = list(csv.DictReader(stream))
+rates = [float(row['Rate_DN_s']) for row in measurements]
+print('Unsaturated field star:', repeatability(rates))
+def colors(counts_BVR, errors_BVR):
+    B, V, R = np.asarray(counts_BVR, dtype=float)
+    eB, eV, eR = np.asarray(errors_BVR, dtype=float)
+    k = 2.5 / np.log(10)
+    bv = -2.5 * np.log10(B / V)
+    vr = -2.5 * np.log10(V / R)
+    sbv = k * np.hypot(eB / B, eV / V)
+    svr = k * np.hypot(eV / V, eR / R)
+    covariance = -(k * eV / V)**2
+    return bv, vr, sbv, svr, covariance
+# Four binaries, each measured in three exposures.
+with (folder / 'E_verified_repeats.csv').open() as stream:
+    rows = list(csv.DictReader(stream))
+pair_means = []
+for target in dict.fromkeys(row['target'] for row in rows):
+    scales = []
+    for row in rows:
+        if row['target'] != target:
+            continue
+        d = math.hypot(float(row['x2']) - float(row['x1']),
+                       float(row['y2']) - float(row['y1']))
+        scales.append(float(row['catalog_arcsec']) / d)
+    pair_means.append(np.mean(scales))
+p = np.mean(pair_means)
+sem = np.std(pair_means, ddof=1) / np.sqrt(len(pair_means))
+print('Plate scale, between-pair SEM:', p, sem)
+print('Field side (arcmin):', p * 1528 / 60)
