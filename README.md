@@ -3,17 +3,6 @@
 Start with `report/main.pdf`. Editable LaTeX is in `report/main.tex`.
 This folder contains the final paper and accompanying analysis code. The Artemis group collected the observations; Grace Davis performed the analysis and wrote the report. The final paper retains both the 6.86% Ogma scatter and the supplementary 1.33% unsaturated-star scatter, with the principal results boxed.
 
-The LaTeX source and PDF in `report/` include the latest wording, individual analysis attribution, references, and boxed values. Upload the contents of this folder at the root of the GitHub repository. This package has not been pushed automatically.
-
-## What changed
-
-- Reconciled M29 numbering against the current AstroImageJ export. The report's original ten-star measurements were correct; the previous repository CSV used a different selection. The corrected export is `data/M29.csv`; the superseded selection is retained as `data/M29_superseded_selection.csv` and is not used in the report.
-- Rebuilt the finding chart, color diagrams, formal covariance, and numerical notebook outputs from consistent star identifiers. `data/m29_reconciled.csv` records all twelve stars and inclusion status.
-- Added an 8-by-8 detector comparison, formal dark-signal uncertainty estimates, raw focus and exposure-time peak checks, and the explicit joint paired-flat gain regression.
-- Clarified the distinction between nonlinear stellar cores and the ADC ceiling, nominal dark signal and intrinsic dark current, and measured stellar width and atmospheric seeing.
-- Added a status table for all ten binary targets. Four remain verified calibration pairs. HR6446 remains a candidate and is excluded; unconfirmed separations are not invented.
-- Shortened and edited the report, grouped related figures, replaced the printed code listing with an analysis-file guide, and expanded the AI-assistance disclosure.
-
 ## Files and inputs
 
 | Exercise | Main notebooks | Inputs |
