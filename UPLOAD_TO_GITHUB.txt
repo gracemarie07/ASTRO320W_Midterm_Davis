@@ -1,9 +1,0 @@
-Upload the contents of this folder to the ROOT of your existing GitHub repository, keeping the notebooks/, scripts/, data/, results/, spreadsheets/, and report/ directories intact.
-
-Latest editable paper: report/main.tex
-Matching compiled paper: report/main.pdf
-All figures required to compile the paper are included in report/.
-
-The analysis code is frozen from the validated revision. See README.md for external raw-data requirements and REVISION_VALIDATION.md for execution status. Original raw observing collections are not included.
-
-This folder has no .git directory or repository history. Uploading these files does not delete obsolete files already on GitHub; those may need to be removed separately. GitHub has not been modified automatically.
