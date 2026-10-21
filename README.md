@@ -1,11 +1,12 @@
 # ASTRO 320W Midterm Observing Report - Grace Davis
 
-This repository contains my analysis code, measurement exports, and Excel workbook,  for Exercises A–E. Observations were collected with the Artemis group; I performed the analysis and wrote the report.
+This repository contains my analysis files and report for Exercises A–E. Observations were collected with the Artemis group; I performed the original analysis.
 
 | Folder | Contents |
 | --- | --- |
-| notebooks/ | Python notebooks for Exercises A–E |
-| scripts/ | Supporting calculations and figure-generation code |
-| data/ | AstroImageJ measurement exports and supporting data |
-| spreadsheets/ | Excel workbook used for the paired-flat gain measurements |
+| notebooks/ | Python notebooks and supporting Python scripts for Exercises A–E |
+| data/ | AstroImageJ measurement exports, supporting data, and the Excel gain workbook |
 | results/ | Saved analysis results and plots |
+| report/ | Report (main.pdf), LaTeX source (main.tex), and required figures |
+
+The two A320_bf_stdev algorithms were supplied by the instructor. Raw observing images are stored separately. Notebooks that use AstroImageJ exports perform the additional calculations, uncertainty estimates, or plotting used in the report.
