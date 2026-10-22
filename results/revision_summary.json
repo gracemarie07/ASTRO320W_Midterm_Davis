@@ -1,0 +1,111 @@
+{
+  "gain": {
+    "value": 1.290151548824388,
+    "sem": 0.006291660892864141,
+    "intercept_DN2": 251.2902326280073
+  },
+  "plate_scale": {
+    "value": 1.2513697996605258,
+    "sem": 0.011502070538371758,
+    "FOV_arcmin": 31.868217564688056
+  },
+  "bias_maps": {
+    "read_noise_min": 9.633875382052368,
+    "read_noise_max": 10.479661142054795,
+    "spatial_min": 9.669483184814453,
+    "spatial_max": 61.85023880004883
+  },
+  "central_bias_mean_DN": 1038.9300537109375,
+  "focus_check": {
+    "min_peak": 49146.0,
+    "max_peak": 49575.0,
+    "min_plateau_pixels": 4,
+    "max_plateau_pixels": 94
+  },
+  "ogma_raw_maxima": [
+    {
+      "image": 15,
+      "t_s": 6.0,
+      "raw_max_DN": 46400,
+      "stellar_region_peak_DN": 27401,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 18,
+      "t_s": 8.0,
+      "raw_max_DN": 46388,
+      "stellar_region_peak_DN": 42552,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 17,
+      "t_s": 10.0,
+      "raw_max_DN": 46342,
+      "stellar_region_peak_DN": 45964,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 19,
+      "t_s": 12.0,
+      "raw_max_DN": 46413,
+      "stellar_region_peak_DN": 46012,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 16,
+      "t_s": 15.0,
+      "raw_max_DN": 46370,
+      "stellar_region_peak_DN": 45918,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 20,
+      "t_s": 20.0,
+      "raw_max_DN": 46416,
+      "stellar_region_peak_DN": 46049,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 21,
+      "t_s": 45.0,
+      "raw_max_DN": 46497,
+      "stellar_region_peak_DN": 46099,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 22,
+      "t_s": 60.0,
+      "raw_max_DN": 46543,
+      "stellar_region_peak_DN": 46034,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 23,
+      "t_s": 90.0,
+      "raw_max_DN": 46635,
+      "stellar_region_peak_DN": 46177,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 24,
+      "t_s": 120.0,
+      "raw_max_DN": 46971,
+      "stellar_region_peak_DN": 46202,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 25,
+      "t_s": 150.0,
+      "raw_max_DN": 47438,
+      "stellar_region_peak_DN": 46421,
+      "digital_clipped_pixels": 0
+    },
+    {
+      "image": 26,
+      "t_s": 300.0,
+      "raw_max_DN": 48152,
+      "stellar_region_peak_DN": 47300,
+      "digital_clipped_pixels": 0
+    }
+  ]
+}

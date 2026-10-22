@@ -1,0 +1,50 @@
+[
+  {
+    "notebook": "A_dark_signal.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 3
+  },
+  {
+    "notebook": "B_gain_workbook.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 2
+  },
+  {
+    "notebook": "B_photon_transfer_curves.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 4
+  },
+  {
+    "notebook": "C_unsaturated_field_star.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 3
+  },
+  {
+    "notebook": "D_M29_colors.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 2
+  },
+  {
+    "notebook": "E_plate_scale.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 3
+  },
+  {
+    "notebook": "E_supplementary_centroids.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 3
+  },
+  {
+    "notebook": "Results_summary.ipynb",
+    "status": "Passed",
+    "method": "Sequential Python code cells, skipping inline display magic",
+    "cells": 1
+  }
+]
